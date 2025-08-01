@@ -5,24 +5,31 @@
     --branco: #FFFFFF;
     --texto-corpo: #333;
 }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
 html { scroll-behavior: smooth; }
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--fundo-claro);
     color: var(--texto-corpo);
     line-height: 1.6;
 }
+
 section {
     padding: 80px 20px;
     text-align: center;
 }
+
 h2 {
     font-size: 2.2rem;
     color: var(--verde-escuro);
     margin-bottom: 20px;
 }
+
 p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 15px auto; }
+
 .btn-whatsapp {
     background-color: var(--amarelo-destaque);
     color: var(--verde-escuro);
@@ -38,18 +45,18 @@ p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 15px auto; }
     transform: scale(1.05);
     background-color: #ffc857;
 }
-
 .header {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px 30px;
+    padding: 5px 10px;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
 }
-.header-logo { height: 50px; }
-
+.header-logo {
+    height: 150px;
+}
 .hero {
     background: linear-gradient(rgba(20, 50, 40, 0.6), rgba(20, 50, 40, 0.6)), url('imagens/caminho-iluminado.jpg');
     background-size: cover;
@@ -64,8 +71,10 @@ p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 15px auto; }
 .hero-content { max-width: 700px; }
 .hero h1 { font-size: 3rem; margin-bottom: 15px; }
 .hero p { font-size: 1.4rem; margin-bottom: 30px; }
+
 #quemsomos { background-color: var(--branco); }
 .quemsomos-texto p { text-align: justify; }
+
 #atuacao { background-color: var(--fundo-claro); }
 .cidades-container {
     display: flex;
@@ -98,6 +107,26 @@ p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 15px auto; }
 }
 .card-cidades li { padding: 5px 0; }
 
+#parceiros {
+    background-color: var(--branco);
+}
+.parceiros-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.parceiro-card {
+    background-color: var(--branco);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+}
+.parceiro-card img {
+    max-width: 100%;
+    height: auto;
+}
 #contato {
     background-color: var(--verde-escuro);
     color: var(--branco);
@@ -140,11 +169,9 @@ p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 15px auto; }
     font-size: 0.9rem;
     opacity: 0.7;
 }
-
 .contato-item img[src="imagens/whatsapp.svg"] {
     filter: brightness(0) invert(1);
 }
-
 .floating-whatsapp {
     position: fixed;
     bottom: 30px;
@@ -172,7 +199,6 @@ section.visible, footer.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
 @media (max-width: 768px) {
     h2 { font-size: 1.8rem; }
     .hero h1 { font-size: 2.2rem; }
@@ -181,28 +207,4 @@ section.visible, footer.visible {
     .contato-links {
         align-items: center;
     }
-}
-
-#parceiros {
-    background-color: var(--branco);
-}
-
-.parceiros-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.parceiro-card {
-    background-color: var(--branco);
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    text-align: center;
-}
-
-.parceiro-card img {
-    max-width: 100%;
-    height: auto;
 }
